@@ -55,7 +55,6 @@ class Nickname(Base):
                         if nazwa is not None:
                             g.main()
                     elif event.key == pygame.K_ESCAPE:
-                        Nickname.name = ""
                         mm.main_menu()
                     elif event.key == pygame.K_BACKSPACE:
                         Nickname.name = Nickname.name[:-1]

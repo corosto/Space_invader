@@ -35,5 +35,5 @@ class Laser:
         return self.mask.overlap(object2.mask, (offset_x, offset_y))
 
     # jak obiekt zderzył się z innym obiektem to zwraca true
-    def collision(self, obj):
-        return self.collide(obj)
+    def collision(self, object2):
+        return self.collide(object2)

@@ -22,8 +22,8 @@ class Ship:  # klasa rodzica
     def get_height(self):
         return self.ship_img.get_height()
 
-    # jeżeli nie strzeliłeś w ostatnim czasie (0.5s) to cool_down_shooting jest 0 i możesz strzelić
-    # inaczej, inkrementuje się w metodzie move_lasers
+    # jeżeli nie strzeliłeś w ostatnim czasie (0.5s) to cool_down_counter jest 0 i możesz strzelić
+    # inaczej, inkrementuje się w tej metodzie
     def cooldown(self):
         if self.cool_down_counter >= self.COOLDOWN:
             self.cool_down_counter = 0

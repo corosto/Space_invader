@@ -111,11 +111,9 @@ class Game:
         self.Player_ship.draw(Importing.WINDOW)  # tworzenie modelu gracza
 
         if self.lost:
-            for i in self.wyniki:
-                if self.Player_ship.score >= int(self.wyniki[9][0]):
-                    self.wyniki.append([self.Player_ship.score, n.name])
-                    self.wyniki = sorted(self.wyniki, key=lambda l: l[0], reverse=True)
-                    break
+            if self.Player_ship.score >= int(self.wyniki[9][0]):
+                self.wyniki.append([self.Player_ship.score, n.name])
+                self.wyniki = sorted(self.wyniki, key=lambda l: l[0], reverse=True)
 
             threading.Thread(target=self.write_score())
 
