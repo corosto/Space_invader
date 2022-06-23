@@ -141,12 +141,12 @@ class Game:
             if (keys[pygame.K_LEFT] or keys[pygame.K_a]) and self.Player_ship.x - self.player_velocity >= 0:
                 self.Player_ship.x -= self.player_velocity
             if (keys[pygame.K_RIGHT] or keys[
-                pygame.K_d]) and self.Player_ship.x + self.Player_ship.get_width() < Importing.WIDTH:
+                 pygame.K_d]) and self.Player_ship.x + self.Player_ship.get_width() < Importing.WIDTH:
                 self.Player_ship.x += self.player_velocity
             if (keys[pygame.K_UP] or keys[pygame.K_w]) and self.Player_ship.y > 400:
                 self.Player_ship.y -= self.player_velocity
             if (keys[pygame.K_DOWN] or keys[
-                pygame.K_s]) and self.Player_ship.y + self.Player_ship.get_height() + 20 < Importing.HEIGHT:
+                 pygame.K_s]) and self.Player_ship.y + self.Player_ship.get_height() + 20 < Importing.HEIGHT:
                 self.Player_ship.y += self.player_velocity
             if keys[pygame.K_SPACE]:  # strzelanie
                 self.Player_ship.shoot()
