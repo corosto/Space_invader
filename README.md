@@ -1,7 +1,6 @@
 # Space_invader
  
-Gra tworzona na 4 semestrze studiów informatycznych.
-Odtworzony i zmieniony space invader, stworzony jako projekt na zajęcia z programowania.
+A game created during the 4th semester of Computer Science studies.
+A recreated and modified space invader game, created as a project for programming classes.
 
-
-Film przedstawiający rozgrywkę: https://youtu.be/5a_IeMQ_u6E
+Gameplay video: https://youtu.be/5a_IeMQ_u6E
